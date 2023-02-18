@@ -1,0 +1,21 @@
+const express = require("express");
+const driverRoutes = require("./driver/driver");
+const managerRoutes = require("./manager/manager");
+const adminRoutes = require("./admin/admin");
+
+const router = express.Router();
+
+// defining router and sub routes
+router
+  .route("/")
+  .get((err, req, res, next) => {
+    console.log("Original Url:", req.url);
+    res.send(req.path);
+  })
+  .post((err, req, res, next) => {});
+
+router.use("/driver", driverRoutes);
+router.use("/manager", managerRoutes);
+router.use("/admin", adminRoutes);
+
+module.exports = router;
