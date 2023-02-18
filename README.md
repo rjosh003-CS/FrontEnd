@@ -76,30 +76,50 @@ where %Project_dir% is the directory where the your Front%20Build is cloned in t
 cd %Project_dir%/Front%20End/Book/
 ```
 
-#### Write cmd to compile the code for the first time:
+#### Command to compile the code for the first time:
 
 ```
 npm run build
 ```
 
-#### Write cmd to run the server at port 8000
+#### Command to run the server at port 8000 as developer
 
 ```
-cd %Project_dir%/Front%20End/Book/
+cd %Project_dir%/FrontEnd
 ```
 
 ```
-node index.js
+npm run dev
 ```
 
-#### To Run the React Application server at port 3000
+#### Command to run the server at port 8000 with nodemon
 
 ```
-%Project_dir%/Front%20End/Book/client
+cd %Project_dir%/FrontEnd
 ```
 
 ```
 npm run start
+```
+
+#### Command to rebuild the software with fresh installation
+
+```
+%Project_dir%/FrontEnd
+```
+
+```
+npm run rebuild
+```
+
+#### Command to remove the node_module
+
+```
+cd %Project_dir%/FrontEnd
+```
+
+```
+npm run clean
 ```
 
 ## Usage
@@ -143,4 +163,4 @@ If you want to learn more about creating good readme files then refer the follow
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
-"# FrontEnd" 
+  "# FrontEnd"
