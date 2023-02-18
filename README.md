@@ -73,7 +73,7 @@ Within a particular ecosystem, there may be a common way of installing things, s
 where %Project_dir% is the directory where the your Front%20Build is cloned in the local drive.
 
 ```
-cd %Project_dir%/Front%20End/Book/
+cd %Project_dir%/FrontEnd
 ```
 
 #### Command to compile the code for the first time:
